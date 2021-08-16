@@ -6,12 +6,13 @@ let chalk = require("chalk");
 
 //Instructions
 
-console.log('Hello '+ chalk.cyan.bold.underline(userName) + ' ! You have choosen to prove yourself in the How well do you know SAHIL? quiz.');
+console.log('Hello '+ chalk.cyan.bold.underline(userName) + " ! Very Brave of you to attempt this Quiz on Manchester United.");
 console.log('*--*-*--*-*--*-*--*-*--*-*--*-*--*-*--*-*--*-*--*-*--*');
 console.log("\n");
 console.log(chalk.red.bold('Some Rules to keep in mind\n'));
 console.log("Not case sensitive");
 console.log('+5 for correct answer,-3 for wrong answer(sorry, its a game after all :)');
+console.log("The answers are space sensitive and use full names to score the maximum")
 console.log("Looks like you are all set, Best of luck :)")
 console.log("\n");
 console.log
@@ -47,20 +48,20 @@ function play(question,answer){
 
 //Questions For the Quiz. JSON
 var quizQuestions = [{
-  question: "How old am I? ",
-  answer: "22"
+  question: "What is name of home stadium of Manchester United? ",
+  answer: "old trafford"
 }, {
-  question: "Which is my favourite sport to play? ",
-  answer: "football"
+  question: "What is the nickname of Manchester United? ",
+  answer: "the red devils"
 }, {
-  question: "Which is my favourite football club? Type the whole name ",
-  answer: "manchester united"
+  question: "How many Premier League Trophies have united won? ",
+  answer: "13"
 }, {
-  question: "what do i prefer more? Tea or Coffee ",
-  answer: "tea"
+  question: "How is the most Successful Manager Of Manchester United? ",
+  answer: "Sir Alex Ferguson"
 },{
-  question: "What do i prefer more? Pizza or Pasta ",
-  answer: "pizza"
+  question: "Who has scored the most goals for Manchester United? ",
+  answer: "wayne rooney"
 }]
 
 //Looping through Questons
@@ -72,7 +73,7 @@ for(var i=0; i<quizQuestions.length; i++ ){
 console.log("Uff that was quite intense! You scored: " + score);
 if(score >= scoreInfo[0].score){
   console.log(chalk("One more thing.....\n"));
-  console.log(chalk("Congratulations! Your knowledge on Sahil is tiptop. You have secured the highest score\nSend me a screenshot of your triumph!"));
+  console.log(chalk("Congratulations! Your knowledge on Manchester United is tiptop. You have secured the highest score\nSend me a screenshot of your triumph!"));
   console.log(chalk("New HighScore: "+ score));
 }
 else{
