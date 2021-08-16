@@ -11,7 +11,7 @@ console.log('*--*-*--*-*--*-*--*-*--*-*--*-*--*-*--*-*--*-*--*-*--*');
 console.log("\n");
 console.log(chalk.red.bold('Some Rules to keep in mind\n'));
 console.log("Not case sensitive");
-console.log('+5 for correct answer,-3 for wrong answer(sorry, its a game after all :)');
+console.log('+3 for correct answer,-1 for wrong answer(sorry, its a game after all :)');
 console.log("The answers are space sensitive and use full names to score the maximum")
 console.log("Looks like you are all set, Best of luck :)")
 console.log("\n");
@@ -35,12 +35,12 @@ function play(question,answer){
   
   if(userAnswer.toLowerCase() === answer){
     console.log(chalk.green.bold("Huzzah! You are correct"));
-    score = score+5;
+    score = score+3;
     console.log('Current score : '+ chalk.green.bold(score));
   }
   else{
     console.log(chalk.red.bold("It looks like we may have hit a bump! Right answer was "+ answer));
-    score = score-3;
+    score = score-1;
     console.log('Current score : '+ chalk.red.bold(score));
   }
   console.log('-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-x-')
